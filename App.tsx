@@ -16,8 +16,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import codePush from "react-native-code-push";
-
+import codePush from 'react-native-code-push';
 
 import {
   Colors,
@@ -102,18 +101,22 @@ const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
+    color: 'red',
   },
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
+    color: 'red',
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
+    color: 'red',
   },
   highlight: {
     fontWeight: '700',
+    color: 'red',
   },
 });
 
