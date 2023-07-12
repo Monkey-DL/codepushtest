@@ -51,5 +51,11 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>CodePushDeploymentKey</key>
+	<string>XSmM6GlG5bc6LtcCWO5Vj3g6Wbo-g2l8R13K4</string>
+	<key>CodePushPublicKey</key>
+	 	<string>-----BEGIN PUBLIC KEY-----
+		MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAshj88/KSpPfDmamdi1zlBaxFgQ9WZNlF597RArTk6ExaZzLNG1Ry/TYhZgmokWtKih0v3lZYb12UuHRG9ZztYWlPqOHDpSYUEKZjbQLW8rnwZaBMi2krXnJagdrQf4Lc7bQ92yQwCqrDGkW8Pquh3SOVMT4CRk8/cTHZ4uVMg8I+iyXpF8EqMb1Tz4J1JewHekHqpB0m2vk2rmc8NLGT0PP6ssEZUOu8hpAFk0ypkbll31LP5JOtXU4Bcj9aWMO2FZgeq+QhrNjDAcDAXUqXl0nInP0ih5IOk3JI0bOLzO8x+Bcb6jkSSJkak+T4CKkO1Qj8eFr4pjTmQI67loPciwIDAQAB
+		-----END PUBLIC KEY-----</string>
 </dict>
 </plist>

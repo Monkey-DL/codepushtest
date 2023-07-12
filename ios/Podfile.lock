@@ -17,8 +17,14 @@ PODS:
     - AppCenter/Core
   - AppCenterReactNativeShared (4.4.5):
     - AppCenter/Core (= 4.4.3)
+  - Base64 (1.1.2)
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
+  - CodePush (8.0.2):
+    - Base64 (~> 1.1)
+    - JWT (~> 3.0.0-beta.12)
+    - React-Core
+    - SSZipArchive (~> 2.2.2)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.72.1)
   - FBReactNativeSpec (0.72.1):
@@ -91,6 +97,8 @@ PODS:
   - hermes-engine (0.72.1):
     - hermes-engine/Pre-built (= 0.72.1)
   - hermes-engine/Pre-built (0.72.1)
+  - JWT (3.0.0-beta.14):
+    - Base64 (~> 1.1.2)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.07.22.00):
@@ -503,6 +511,7 @@ PODS:
     - React-logger (= 0.72.1)
     - React-perflogger (= 0.72.1)
   - SocketRocket (0.6.1)
+  - SSZipArchive (2.2.3)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -512,6 +521,7 @@ DEPENDENCIES:
   - appcenter-core (from `../node_modules/appcenter`)
   - appcenter-crashes (from `../node_modules/appcenter-crashes`)
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
+  - CodePush (from `../node_modules/react-native-code-push`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
@@ -579,6 +589,7 @@ SPEC REPOS:
   trunk:
     - AppCenter
     - AppCenterReactNativeShared
+    - Base64
     - CocoaAsyncSocket
     - Flipper
     - Flipper-Boost-iOSX
@@ -589,9 +600,11 @@ SPEC REPOS:
     - Flipper-PeerTalk
     - FlipperKit
     - fmt
+    - JWT
     - libevent
     - OpenSSL-Universal
     - SocketRocket
+    - SSZipArchive
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -603,6 +616,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/appcenter-crashes"
   boost:
     :podspec: "../node_modules/react-native/third-party-podspecs/boost.podspec"
+  CodePush:
+    :path: "../node_modules/react-native-code-push"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   FBLazyVector:
@@ -687,8 +702,10 @@ SPEC CHECKSUMS:
   appcenter-core: c593b2e4ac28d6a21b6a217c4a5e6b3de7b0b00f
   appcenter-crashes: d9ae1c9296974c1c433600fa2f320e0ba1f12bdf
   AppCenterReactNativeShared: f395caeabde0dc3a11609dbcb737d0f14cd40e79
+  Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  CodePush: 9eddecce05cd10491e2673b259c85885a462be33
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   FBLazyVector: 55cd4593d570bd9e5e227488d637ce6a9581ce51
   FBReactNativeSpec: 799b0e1a1561699cd0e424e24fe5624da38402f0
@@ -703,6 +720,7 @@ SPEC CHECKSUMS:
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 9df83855a0fd15ef8eb61694652bae636b0c466e
+  JWT: ef71dfb03e1f842081e64dc42eef0e164f35d251
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
@@ -738,9 +756,10 @@ SPEC CHECKSUMS:
   React-utils: 0a70ea97d4e2749f336b450c082905be1d389435
   ReactCommon: e593d19c9e271a6da4d0bd7f13b28cfeae5d164b
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
   Yoga: 65286bb6a07edce5e4fe8c90774da977ae8fc009
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 9bec608929385019daa7e9a9d130898dd36acd0f
+PODFILE CHECKSUM: d958fa3fd13bbdba1d7308c6dc8aa85bd1d219f0
 
 COCOAPODS: 1.12.1
